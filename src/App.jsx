@@ -5,11 +5,11 @@ import './App.css';
 import DetalleProducto from "./Components/DetalleProducto";
 import Saludo from "./Components/Saludo";
 import Lista from "./Components/Lista";
-import ProductDetail from "./Components/ProductDetail";
 import Registro from "./Components/formulario";
 import Inicio from "./Components/Inicio";
 import FormularioHook from "./Components/FormularioHook";
 import Nosotros from "./Components/Nosotros";
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -17,7 +17,7 @@ import {
   Link,
   NavLink
 } from "react-router-dom";
-import TareasAbm from "./Components/tareas-abm";
+import Abm from "./Components/abm";
 
 
 function App() {
@@ -41,11 +41,8 @@ Lista
 <NavLink to="/nosotros" className="btn btn-dark">
 Nosotros
 </NavLink>
-<NavLink to="/detalle" className="btn btn-dark">
-Detalle
-</NavLink>
 <NavLink to="/abm" className="btn btn-dark">
-Abm de Tareas
+Alta-Baja-Modif
 </NavLink>
 </div>
 
@@ -54,8 +51,7 @@ Abm de Tareas
   <Route path="/formulario" element={<Registro/>}/>
   <Route path="/lista" element={<Lista/>}/>
   <Route path="/nosotros" element={<Nosotros/>}/>
-  <Route path="/detalle" element={<ProductDetail/>}/>
-  <Route path="/abm" element={<TareasAbm/>}/>
+  <Route path="/abm" element={<Abm/>}/>
 </Routes>
 
 </div>
